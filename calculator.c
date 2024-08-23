@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-
+#include<string.h>
                          
 //Function for addition
 double addition(int var1, int var2){
@@ -44,11 +44,40 @@ double square=pow(var1,2);
 printf("square= %lf",square);
 }
 
+//Function for trigonometric functions
+double trigonometry(char *trig, double var1){
+
+if(strcmp(trig,"cos")==0){
+return cos(var1);
+}
+else if(strcmp(trig,"sin")==0){
+return sin(var1);
+}
+else if(strcmp(trig,"tan")==0){
+return tan(var1);
+}
+else{
+printf("Invalid trigonometric function\n");
+}
+}
+
 int main() {
 
 char calculate;   //storing operators 
 int num,num1,num2;
-printf("+,-,*,/,s,^(choose one):");
+char trig[4];
+double angle;
+
+printf("+ for Addition\n");
+printf("- for Subtraction\n");
+printf("* for Multiplication\n");
+printf("/ for Division\n");
+printf("^ for square\n");
+printf("s for squareroot\n");
+printf("t for trigonometry\n");
+
+
+printf("Choose an operation: ");
 scanf(" %c",&calculate);
 
 if(calculate=='+' || calculate=='-'|| calculate=='*' || calculate=='/'){
@@ -83,6 +112,16 @@ else if(calculate=='^'){
 printf("Enter Number: ");
 scanf("%d",&num);
 squared(num);  //square function call
+}
+else if(calculate=='t'){
+printf("Enter trig function(cos,sin,tan): ");
+scanf("%3s", &trig);
+
+printf("Enter  the angle in degrees= ");
+scanf("%lf",&angle);
+ angle = angle * (M_PI / 180.0);
+trigonometry(trig,angle); //Trigonometry function call
+
 }
 else{
 printf("Invalid  Input");
