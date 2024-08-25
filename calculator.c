@@ -44,23 +44,6 @@ double square=pow(var1,2);
 printf("square= %lf",square);
 }
 
-//Function for trigonometric functions
-double trigonometry(char *trig, double var1){
-
-if(strcmp(trig,"cos")==0){
-return cos(var1);
-}
-else if(strcmp(trig,"sin")==0){
-return sin(var1);
-}
-else if(strcmp(trig,"tan")==0){
-return tan(var1);
-}
-else{
-printf("Invalid trigonometric function\n");
-}
-}
-
 int main() {
 
 char calculate;   //storing operators 
@@ -119,10 +102,22 @@ scanf("%3s", &trig);
 
 printf("Enter  the angle in degrees= ");
 scanf("%lf",&angle);
- angle = angle * (M_PI / 180.0);
-trigonometry(trig,angle); //Trigonometry function call
+double radians=angle*(M_PI/180);
+printf("Angle in radians= %lf\n",radians);
 
+if(strcmp(trig,"cos")==0){          ////////////////////////////////////////////
+printf("cos(%lf)=%lf",angle,cos(radians));    
 }
+else if(strcmp(trig,"sin")==0){
+printf("sin(%lf)=%lf",angle,sin(radians)); 
+}                                                                         //trig function statements
+else if(strcmp(trig,"tan")==0){
+printf("tan(%lf)=%lf",angle,tan(radians)); 
+}
+else{
+printf("Invalid trigonometric function\n");
+}
+}                    ////////////////////////////////////////////////
 else{
 printf("Invalid  Input");
 }
