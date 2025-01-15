@@ -1,0 +1,43 @@
+[33mcommit f13c9af10fb24b22c784fe8e5662f975e06ffac2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 47ec326 bd4ad8b
+Author: Druscilla-ktm <nanyangedruscilla@gmail.com>
+Date:   Wed Jan 15 20:18:56 2025 +0300
+
+    Resolved conflict in README.md and merged master into main
+
+[33mcommit bd4ad8b936e20f6138d57abbf33174fdc23417c8[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: nanyangedruscilla@gmail.com <druscilla@kali>
+Date:   Sun Aug 25 23:19:49 2024 +0300
+
+    fixed the trigonometric functions
+
+[33mcommit c91ec0378edc26d23719a3fd2746a68820f6a864[m
+Merge: ae50cec 26c0c09
+Author: nanyangedruscilla@gmail.com <druscilla@kali>
+Date:   Fri Aug 23 23:47:41 2024 +0300
+
+    Merge branch 'master' of github.com:Druscilla-ktm/Calculator
+
+[33mcommit ae50cec3ddd44d68e3fb1db825c6b42b1ccbd00c[m
+Author: nanyangedruscilla@gmail.com <druscilla@kali>
+Date:   Fri Aug 23 23:41:56 2024 +0300
+
+    Trig function, my second commit
+
+[33mcommit 26c0c09f3269f0149ebbde8e1db3761ee7157851[m
+Author: Druscilla-ktm <nanyangedruscilla@gmail.com>
+Date:   Fri Aug 23 00:18:52 2024 +0300
+
+    Create README.md
+
+[33mcommit a374128cc71d5f6589667c639ba3b276b7c55f27[m
+Author: nanyangedruscilla@gmail.com <druscilla@kali>
+Date:   Thu Aug 22 23:16:43 2024 +0300
+
+    My first commit to calculator.c program
+
+[33mcommit 47ec326be2ba974b3271369ebd3cdb9949efedfc[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Druscilla-ktm <nanyangedruscilla@gmail.com>
+Date:   Thu Aug 22 22:23:19 2024 +0300
+
+    Initial commit
